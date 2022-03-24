@@ -25,6 +25,7 @@ class ProductSerialize(serializers.ModelSerializer):
 
 class PhotographySerializer(serializers.ModelSerializer):
     product = ProductSerialize()
+    photo = serializers.ImageField(source='product-images/')
 
     class Meta:
         model = Photography

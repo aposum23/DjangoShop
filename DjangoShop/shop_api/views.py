@@ -1,5 +1,5 @@
-from models import Product, Salesman, Categories, Photography
-from serializers import SalesmanSerializer, CategoriesSerializer, ProductSerialize, PhotographySerializer
+from shop_api.models import Product, Salesman, Categories, Photography
+from shop_api.serializers import SalesmanSerializer, CategoriesSerializer, ProductSerialize, PhotographySerializer
 from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
